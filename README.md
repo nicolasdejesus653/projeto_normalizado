@@ -1,4 +1,8 @@
-Anomalias Identificadas
+📌 Análise da Tabela Não Normalizada
+
+A tabela original apresenta diversos problemas estruturais por concentrar múltiplas entidades em uma única estrutura, o que viola princípios fundamentais da modelagem relacional.
+
+📌 Anomalias Identificadas
 Anomalia de Inserção:
 Não é possível cadastrar um médico ou convênio sem que exista uma consulta associada, pois todos os dados estão centralizados na mesma tabela.
 Anomalia de Atualização:
