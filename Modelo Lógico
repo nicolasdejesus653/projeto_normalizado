@@ -1,0 +1,26 @@
+## Modelo Lógico
+Paciente(
+  cpf PRIMARY KEY,
+  nome,
+  telefone
+)
+
+Medico(
+  crm PRIMARY KEY,
+  nome,
+  especialidade
+)
+
+Convenio(
+  id_convenio PRIMARY KEY,
+  nome
+)
+
+Consulta(
+  id_consulta PRIMARY KEY,
+  data_hora,
+  valor,
+  cpf FOREIGN KEY REFERENCES Paciente(cpf),
+  crm FOREIGN KEY REFERENCES Medico(crm),
+  id_convenio FOREIGN KEY REFERENCES Convenio(id_convenio)
+)
